@@ -194,12 +194,10 @@ public class Main implements ActionListener{
 		/*Equals*/
 		if(e.getSource() == equalsBtn) {
 			if(!currentTextValue.isEmpty()) {
-				num1 = Double.parseDouble(currentTextValue.split(rege, 2)[0]);
-				num2 = Double.parseDouble(currentTextValue.split(rege, 2)[1]);
-				
 				try {
-				calc();
-				
+					num1 = Double.parseDouble(currentTextValue.split(rege, 2)[0]);
+					num2 = Double.parseDouble(currentTextValue.split(rege, 2)[1]);
+					calc();
 				}catch(NumberFormatException err) {
 					textField.setText("Wrong input!");
 				}
@@ -207,7 +205,7 @@ public class Main implements ActionListener{
 		}
 	}
 
-	public void calc() throws NumberFormatException{
+	public void calc() {
 		switch(operator) {
 		case '+':
 			result = num1 + num2; 
