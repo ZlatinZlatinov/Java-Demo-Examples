@@ -10,6 +10,8 @@
 
 ## 2. Изглед: 
 
+![App View](https://github.com/ZlatinZlatinov/Java-Demo-Examples/blob/main/Calculator/calc2.png "App view supposed to be here")
+
 ## 3.	Функционалности и начин на работа:
 
   Приложението използва библиотеката Java Swing. Прозорецът е създаден с помощта на класа JFrame, със ръчно въведени размери. 
